@@ -1,7 +1,16 @@
 # NYCU_AIC_Final_Project
 
 ## Introduction
-We use Raisim to train ANYmal to achieve two tasks, "walk stably" and "navigation".
+We use RL to train ANYmal to achieve two tasks, "walk stably" and "navigation" in Raisim.
+
+### rsg_anymal
+This is the environment for the task "walk stably", we simply want the robot to walk stably with minimum torque.
+
+### navigation_ori_anymal
+This is the environment for the task "navigation", we want our robot to navigate to a certain position. The reward is based on distance error between current position and the target position.
+
+### navigation_dst_anymal
+Different from `navigation_ori_anymal` only in reward, which is based on distance error between current position and the target position.
 
 ## Installation
 Please first check out the [installation guide](https://raisim.com/sections/Installation.html) on RaiSim website to install Raisim.
