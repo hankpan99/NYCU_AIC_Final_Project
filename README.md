@@ -23,14 +23,15 @@ In the following please run commands in the directory ```PATH_TO_raisimLib/raisi
 
 ### Run
 1. Compile raisimgym: ```python setup.py develop```
-2. Run runner.py of the task (for rsg_anymal example): ```cd raisimGymTorch/env/envs/rsg_anymal && python ./runner.py```
+2. Run runner.py of the task (for rsg_anymal example): ```python raisimGymTorch/env/envs/rsg_anymal/runner.py```
 
 ### Test policy
 1. Compile raisimgym: ```python setup.py develop```
-2. Run tester.py of the task with policy (for rsg_anymal example): ```python raisimGymTorch/env/envs/rsg_anymal/tester.py --weight data/roughTerrain/FOLDER_NAME/full_XXX.pt```
+2. Run tester.py of the task with policy (for rsg_anymal example): ```python raisimGymTorch/env/envs/rsg_anymal/tester.py --weight data/rsg_anymal/FOLDER_NAME/full_XXX.pt```
 
 ### Retrain policy
-1. Run runner.py of the task with policy (for rsg_anymal example): ```python raisimGymTorch/env/envs/rsg_anymal/runner.py --mode retrain --weight data/rsg_anymal/FOLDER_NAME/full_XXX.pt```
+1. Compile raisimgym: ```python setup.py develop```
+2. Run runner.py of the task with policy (for rsg_anymal example): ```python raisimGymTorch/env/envs/rsg_anymal/runner.py --mode retrain --weight data/rsg_anymal/FOLDER_NAME/full_XXX.pt```
 
 Please check out this [link](https://raisim.com/sections/RaisimGymTorch.html) for more details about RaisimGymTorch.
 
